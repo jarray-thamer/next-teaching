@@ -1,7 +1,9 @@
 import Image from "next/image";
 import cat from "./public/cat.webp";
+import { getMemberDetails } from "@/services/getMember";
 
-export default function Home() {
+export default async function Home() {
+  await getMemberDetails("1");
   return (
     <div className="space-y-4">
       <h1 className="text-3xl text-blue-700">GoMyCode Portal</h1>

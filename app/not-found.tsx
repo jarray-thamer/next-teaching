@@ -3,7 +3,7 @@ import React from "react";
 import catStare from "./public/cat-stare.gif";
 import Link from "next/link";
 
-const notFound = () => {
+const Hello = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-slate-100 px-6 py-24">
       <div className="flex flex-col items-center text-center">
@@ -40,4 +40,4 @@ const notFound = () => {
   );
 };
 
-export default notFound;
+export default Hello;
