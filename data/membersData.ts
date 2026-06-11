@@ -1,8 +1,9 @@
 import { MemberType } from "@/types/membersTypes";
+import { randomUUID } from "crypto";
 
 export const membersData: MemberType[] = [
   {
-    id: "1",
+    id: randomUUID(),
     name: "Ahmed",
     role: "Front end Instructor",
     techStack: ["Next.js", "TypeScript", "tailwind", "Node.js"],
@@ -14,7 +15,7 @@ export const membersData: MemberType[] = [
     phone: "+216 55 123 456",
   },
   {
-    id: "2",
+    id: randomUUID(),
     name: "Sarra",
     role: "Hackerspace Manager & Instructor",
     techStack: ["Html", "CSS", "JavaScript", "Excel"],
@@ -26,7 +27,7 @@ export const membersData: MemberType[] = [
     phone: "+216 55 234 567",
   },
   {
-    id: "3",
+    id: randomUUID(),
     name: "Ali",
     role: "UI/UX Designer & Frontend Developer",
     techStack: ["Figma", "React", "Tailwind"],

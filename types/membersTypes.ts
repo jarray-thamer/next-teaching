@@ -1,6 +1,6 @@
 export interface MemberType {
   id: string;
-  name?: string;
+  name: string;
   role: string;
   techStack?: string[];
   description?: string;
@@ -9,3 +9,7 @@ export interface MemberType {
   address?: string;
   phone?: string;
 }
+
+// tailwindcss, react, nextjs, css
+
+// ["tailwind","","react","","",""]

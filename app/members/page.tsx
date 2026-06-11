@@ -1,3 +1,4 @@
+import AddMemberForm from "@/components/AddMemberForm";
 import LikeButton from "@/components/LikeButton";
 import SearchBar from "@/components/SearchBar";
 import { membersData } from "@/data/membersData";
@@ -34,7 +35,7 @@ const page = ({ searchParams }: PageProps) => {
       <SearchBar />
       {/* Mapping all the fake data */}
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2 mb-6">
         {filterdMembers.map((member) => (
           <div
             key={member.id}
@@ -59,6 +60,7 @@ const page = ({ searchParams }: PageProps) => {
           </div>
         ))}
       </div>
+      <AddMemberForm />
     </div>
   );
 };
