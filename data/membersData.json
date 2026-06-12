@@ -1,0 +1,60 @@
+[
+  {
+    "id": "0f4f09c8-6d06-4669-8f2a-2d5f4d5b7d01",
+    "name": "Ahmed",
+    "role": "Front end Instructor",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "tailwind",
+      "Node.js"
+    ],
+    "description": "Builds modern front-end experiences and guides the cohort through Next.js.",
+    "age": 29,
+    "gender": "Male",
+    "address": "Tunis, Tunisia",
+    "phone": "+216 55 123 456"
+  },
+  {
+    "id": "58e3c6d0-16d5-4f87-8a08-8a3d6d0d54d2",
+    "name": "Sarra",
+    "role": "Hackerspace Manager & Instructor",
+    "techStack": [
+      "Html",
+      "CSS",
+      "JavaScript",
+      "Excel"
+    ],
+    "description": "Supports learners, manages the hackerspace, and helps with practical workshops.",
+    "age": 31,
+    "gender": "Female",
+    "address": "Sousse, Tunisia",
+    "phone": "+216 55 234 567"
+  },
+  {
+    "id": "1f9f3d56-1b8a-47d0-8d08-0a1b1c22c3f3",
+    "name": "Ali",
+    "role": "UI/UX Designer & Frontend Developer",
+    "techStack": [
+      "Figma",
+      "React",
+      "Tailwind"
+    ],
+    "description": "Designs clean interfaces and turns them into responsive React components.",
+    "age": 27,
+    "gender": "Male",
+    "address": "Sfax, Tunisia",
+    "phone": "+216 55 345 678"
+  },
+  {
+    "id": "2b06ee8e-e809-4e5e-b017-8fbd5d292364",
+    "name": "Marwa",
+    "role": "Backend Developer",
+    "techStack": [
+      "Nodejs",
+      "tailwindcss",
+      "javascript",
+      "python"
+    ]
+  }
+]

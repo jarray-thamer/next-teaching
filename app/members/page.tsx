@@ -1,7 +1,7 @@
 import AddMemberForm from "@/components/AddMemberForm";
 import LikeButton from "@/components/LikeButton";
 import SearchBar from "@/components/SearchBar";
-import { membersData } from "@/data/membersData";
+import { readMembers } from "@/services/membersStore";
 import Link from "next/link";
 import React from "react";
 
@@ -11,8 +11,9 @@ interface PageProps {
   };
 }
 
-const page = ({ searchParams }: PageProps) => {
+const page = async ({ searchParams }: PageProps) => {
   const query = ((searchParams?.q as string) || "").toLowerCase();
+  const membersData = await readMembers();
 
   const filterdMembers = membersData.filter((member) => {
     if (!query) return true;

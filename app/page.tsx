@@ -12,7 +12,29 @@ export default async function Home() {
         <br />
         Navigate to the Members page to see our cohort!
       </p>
-      <Image src={cat} width={240} height={240} alt="cat" />
+      <div style={{ width: "360px", maxWidth: "100%" }}>
+        <div
+          style={{
+            height: "0",
+            paddingBottom: "177.78%",
+            position: "relative",
+          }}
+        >
+          <iframe
+            width="360"
+            height="640"
+            style={{
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+            }}
+            frameBorder="0"
+            src="https://imgflip.com/embed/83nqe1"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }

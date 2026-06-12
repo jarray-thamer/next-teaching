@@ -1,6 +1,6 @@
 import { randomUUID } from "crypto";
-import { membersData } from "@/data/membersData";
 import { MemberType } from "@/types/membersTypes";
+import { readMembers, saveMembers } from "@/services/membersStore";
 
 export const addMember = async (member: Omit<MemberType, "id">) => {
   // Simulate a database write delay.
@@ -11,6 +11,8 @@ export const addMember = async (member: Omit<MemberType, "id">) => {
     ...member,
   };
 
+  const membersData = await readMembers();
   membersData.push(newMember);
+  await saveMembers(membersData);
   return newMember;
 };

@@ -1,12 +1,22 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { addMember } from "@/services/addMember";
 
-export async function createMember(formData: FormData) {
-  const name = formData.get("name") as string;
-  const role = formData.get("role") as string;
+export type FormState = { error: string };
+
+export async function createMember(
+  prevState: FormState,
+  formData: FormData,
+): Promise<FormState> {
+  const name = (formData.get("name") as string)?.trim();
+  if (!name) {
+    return { error: "Name is required !" };
+  }
+  const role = (formData.get("role") as string)?.trim();
+  if (!role) {
+    return { error: "Role is required !" };
+  }
   const techStack = (formData.get("techStack") as string)
     .split(",")
     .map((t) => t.trim())
@@ -15,5 +25,6 @@ export async function createMember(formData: FormData) {
   await addMember({ name, role, techStack });
 
   revalidatePath("/members");
-  redirect("/members");
+
+  return { error: "" }; // success case, no error
 }
