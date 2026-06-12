@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Chewy, Faster_One } from "next/font/google";
 import Navbar from "@/components/Navbar";
-
-export const chewy = Chewy({ subsets: ["latin"], weight: "400" });
-export const fasterOne = Faster_One({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Hello world ",

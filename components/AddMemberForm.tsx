@@ -17,11 +17,13 @@ const AddMemberForm = () => {
     >
       <h2 className="text-xl font-bold text-gray-800">Add a new member</h2>
       <input
+        required
         name="name"
         placeholder="Name"
         className="w-full px-4 py-2 border border-gray-300 rounded-lg"
       />
       <input
+        required
         name="role"
         placeholder="Role"
         className="w-full px-4 py-2 border border-gray-300 rounded-lg"
